@@ -14,10 +14,10 @@ with open(bfilename, 'wb') as f:
     pickle.dump(data2,f)
     pickle.dump(data3,f)
 
-# 텍스트 쓱
+# 텍스트 쓰기
 with open(tfilename, 'wt') as f:
     f.write(str(data1))
-    f.write('\n')
+    f.write('\n') #줄바꿈
     f.write(data2)
     f.write('\n')
     f.writelines('\n'.join(data3))
